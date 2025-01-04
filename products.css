@@ -1,0 +1,205 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	width: 100%;
+	height: 100px;
+	border-bottom: 2px solid #59331d;
+	background-color: #ffffff;
+	display: block;
+	overflow: hidden;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+}
+
+#logo {
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 50px;
+}
+
+#logo img {
+	width: 114.19px;
+	height: 80.183px;
+}
+
+nav {
+	float: right;
+}
+
+.nav-links {
+	list-style-type: none;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.nav-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.nav-links li a {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #131d26;
+	text-decoration: none;
+	padding: 50px 0;
+	display: inline-block;
+}
+
+.nav-links li a:hover {
+	color: #082b59;
+}
+
+
+/* Body Content */
+
+h1,
+h5 {
+	font-family: "Poppins", sans-serif;
+	font-size: 700;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	width: auto;
+	margin: 0 auto;
+}
+
+.col {
+	flex: 1 1 calc(30% - 20px);
+	box-sizing: border-box;
+}
+
+.card {
+	width: 100%;
+	min-height: 400px;
+	height: auto;
+	aspect-ratio: 3 / 4;
+	border: 1px solid #59331d;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.card-img-top {
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+	margin: 5px auto;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+}
+
+.card-title {
+	font-size: 20px;
+	text-align: center;
+}
+
+.card-text {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 14.5px;
+	text-align: justify;
+	overflow: hidden;
+	line-height: 1.5;
+	position: relative;
+}
+
+/* Footer */
+footer {
+	max-width: auto;
+	height: 100px;
+}
+
+.footer-beans img {
+	width: 100%;
+	padding-top: 75px;
+}
+
+.blue-footer {
+	background-color: #082b59;
+	padding: 40px;
+	width: auto;
+	line-height: 35px;
+}
+
+.footer-disclaimer {
+	text-align: center;
+}
+
+.footer-disclaimer p {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	color: white;
+}
+
+#footer-links {
+	text-align: center;
+	word-spacing: 20px;
+}
+
+#footer-links a {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	color: white;
+}
+
+.copyright-text {
+	color: white;
+}
+
+.copyright-text p {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+/* Smartphone styles */
+@media (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+/* Small desktop styles */
+@media (min-width: 1025px) and (max-width: 1366px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+/* Medium to large desktop styles */
+@media (min-width: 1367px) and (max-width: 1920px) {
+	body {
+		font-size: 20px;
+	}
+}
